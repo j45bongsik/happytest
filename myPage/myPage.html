@@ -1,0 +1,155 @@
+<!--#include file="../inc/header_sub.asp"-->
+
+	<div class="member_wrap">
+		<div class="join_wrap">
+		<h1 class="h1_title">마이페이지</h1>
+
+			<div class="form_wrap">
+
+				<div class="tab_step_my">
+					<ul>
+						<li class="on"><a href="/ensi_front/mypage/myPage.html">개인정보변경</a></li>
+						<li><a href="/ensi_front/mypage/qna/list.html">Q&A</a></li>
+						<li><a href="/ensi_front/mypage/withdrawal.html">회원탈퇴</a></li>
+					</ul>
+				</div>
+
+				<div class="contents">
+
+				<!-- 계정정보 -->
+				<h2 class="h2_title">계정정보</h2>
+
+				<div class="form_table">
+				<table>
+				<caption>마이페이지 개인정보변경내 계정정보 수정 폼(아이디, 비밀번호, 비밀번호 확인으로 구성)</caption>
+				<colgroup>
+					<col class="wf200 m-w25" />
+					<col />
+				</colgroup>
+
+				<tbody>
+					<tr>
+						<th scope="row">아이디<span class="icon_asterisk_R"></span></th>
+						<td class="td-email">email@email.com</td>
+					</tr>
+					<tr>
+						<th scope="row">비밀번호<span class="icon_asterisk_R"></span></th>
+						<td>
+							<label for="pass"><input type="password" class="input w50" name="pass" id="pass" title="비밀번호" /></label>
+							<p class="guide_txt_grey">비밀번호 변경할때만 입력해주세요. (6~16자리 영문 또는 숫자조합)</p>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">비밀번호 확인<span class="icon_asterisk_R"></span></th>
+						<td>
+							<label for="pass"><input type="password" class="input w50" name="pass" id="pass" title="비밀번호" /></label>
+							<p class="guide_txt_R_red">비밀번호가 일치 하지 않습니다.</p>
+						</td>
+					</tr>
+				</tbody>
+				</table>
+				</div>
+				<!-- // form_table -->
+				<!-- // 계정정보 -->
+
+				<!-- 기본정보 -->
+				<h2 class="h2_title">기본정보</h2>
+
+				<div class="form_table">
+					<table>
+					<caption>마이페이지 개인정보변경내 기본정보 수정 폼(이름, 휴대전화, 소속, 주소, 상세주소, 관심분야(SI교육, SI연구 중복선택 가능)으로 구성)</caption>
+					<colgroup>
+						<col class="wf200 m-w25" />
+						<col />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">이름</th>
+							<td>김재영</td>
+						</tr>
+						<tr>
+							<th scope="row">휴대전화<span class="icon_asterisk_R"></span></th>
+							<td>
+								<select name="phone_first" id="phone_first" class="phone_select" title="전화번호 앞자리">
+									<option value="">010</option>
+								</select>
+								<span class="space_txt">-</span>
+								<label for="phone_center"><input type="text" class="input w13" name="phone_center" id="phone_center" title="휴대전화 중간자리" /></label>
+								<span class="space_txt">-</span>
+								<label for="phone_end"><input type="text" class="input w13" name="phone_end" id="phone_end" title="휴대전화 끝자리" /></label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="belong">소속<span class="icon_asterisk_R"></span></label></th>
+							<td>
+								<input type="text" class="input w50" name="belong" id="belong" title="소속" />
+							</td>
+						</tr>
+						<!-- 직책추가 -->
+						<tr>
+							<th scope="row"><label for="position">직책<span class="icon_asterisk_R"></span></label></th>
+							<td>
+								<input type="text" class="input w50" name="position" id="position" title="직책" />
+							</td>
+						</tr>
+						<!-- // 직책추가 -->
+						<tr>
+							<th scope="row">주소</th>
+							<td>
+								<label for="address"><input type="text" class="input w74" name="address" id="address" title="주소" /></label>
+								<label for="btn_address"><button value="주소검색" id="btn_address" name="btn_address" type="button" class="btn_txt_box" onclick="PopOpenEvt('http://10.10.10.199:81/ensi_front/popup/post.html', 600, 700);">주소검색</button></label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="address_detail">상세주소</label></th>
+							<td>
+								<input type="text" class="input w90" name="address_detail" id="address_detail" title="상세주소" />
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">관심분야<span class="icon_asterisk_R"></span><br><span class="font_14">(중복선택 가능)</span></th>
+							<td class="checkbox_ul">
+								<ul>
+									<li>
+										<input type="checkbox" name="check_1" id="check_1" class="check-m" title="SI교육" />
+										<label for="check_1" class="idcheck">SI교육</label>
+									</li>
+									<li>
+										<input type="checkbox" name="check_2" id="check_2" class="check-m" title="SI연구" />
+										<label for="check_2" class="idcheck">SI연구</label>
+									</li>
+								</ul>
+							</td>
+						</tr>
+					</tbody>
+					</table>
+				</div>
+				<!-- // form_table -->
+				<!-- // 기본정보 -->
+
+				<!-- 공통버튼 -->
+				<div class="btn_both">
+					<button value="수정하기" id="btn_join" name="btn_join" type="button">수정하기</button>
+				</div>
+				<!-- // 공통버튼 -->
+
+				</div>
+				<!-- // contents -->
+
+			</div>
+			<!-- // form_wrap -->
+
+		</div>
+		<!-- // join_wrap -->
+
+	</div>
+	<!--  // member_wrap -->
+
+	<div class="btn_top show">
+		<div class="inner">
+			<a href="javascript:scollTopStart();"><span>상단으로 이동</span></a>
+		</div>
+	</div>
+	<!-- // btn_top show -->
+
+<!--#include file="../inc/footer_member.asp"-->

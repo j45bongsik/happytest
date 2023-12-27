@@ -1,0 +1,105 @@
+<!--#include file="../inc/header_sub.asp"-->
+
+<div class="container">
+    <div class="content">
+
+		<!-- Sub Banner 영역 -->
+		<div class="sub-banner top_bg05">
+			<div class="inner">
+				<div class="sub_title"><p>Community</p></div>
+				<p class="m_title">Contact</p>
+			</div>
+
+			<!-- 2depth -->
+			<div class="menu_area">
+				<ul>
+					 <li><a href="/ensi_front/Community/notice/list.html">공지사항</a></li>
+					 <li class="on"><a href="/ensi_front/Community/contact.html" title="현재 페이지">CONTACT</a></li>
+				</ul>
+			</div>
+			<!-- // 2depth -->
+		</div>
+		<!-- // Sub Banner 영역 -->
+
+		<div class="section">
+
+			<div class="article">
+
+			<div class="sub-content cont-contact">
+				<h1 class="sub_title">CONTACT</h1>
+
+					<div class="table_info">
+						<ul>
+							<li><span class="icon_asterisk_L"></span>필수입력입니다.</li>
+							<li>문의 하신 내용에 대한 답변은 마이페이지에서 확인 가능합니다.</li>
+						</ul>
+					</div>
+
+					<div class="form_table">
+						<table>
+							<caption>문의 페이지 정보 입력 폼(이름, 이메일, 제목, 문의내용, 파일첨부로 구성)</caption>
+							<colgroup>
+								<col class="wf200 m-w25" />
+								<col />
+							</colgroup>
+							
+							<tbody>
+								<tr>
+									<th scope="row">이름</th>
+									<td>김재영</td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="e_mail">이메일</label></th>
+									<td><input type="text" name="e_mail" id="e_mail" title="이메일" class="w100" /></td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="subject">제목<span class="icon_asterisk_R"></span></label></th>
+									<td><input type="text" name="subject" id="subject" title="제목" class="w100" /></td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="text_area">문의 내용<span class="icon_asterisk_R"></span></label></th>
+									<td>
+										<textarea name="text_area" id="text_area" cols="30" rows="10" title="문의내용" class="contact">테스트 텍스트입니다. 테스트 텍스트입니다.</textarea>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">파일첨부</th>
+									<td>
+										<div class="wrap_fileSearch">
+											<span class="input-m w35 fileName"></span>
+											<a href="#file01" class="btn1-s-slight wf100" title="파일선택">파일선택</a>
+											<input type="file" id="file01" class="input _file" title="파일선택">
+											<span class="btn-txt">pdf, word, xls 파일만 첨부가 가능합니다. (10MB 미만)</span>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!-- // form_table -->
+
+					<div class="btn_both">
+						<label for="btn_submit"><button value="등록" name="btn_submit" id="btn_submit" type="submit">등록</button></label>
+					</div>
+
+				</div>
+				<!--  // sub-content -->
+			</div>
+			<!--  // article -->
+
+		</div>
+		<!--  // section -->
+
+		<div class="btn_top show">
+			<div class="inner">
+				<a href="javascript:scollTopStart();"><span>상단으로 이동</span></a>
+			</div>
+		</div>
+		<!-- // btn_top show -->
+
+    </div>
+    <!-- // content -->
+</div>
+<!-- // container -->
+
+<!--#include file="../inc/footer_sub.asp"-->

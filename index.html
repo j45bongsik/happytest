@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ENSI</title>
+<style type="text/css">
+
+* {margin:0; padding:0; font-family:"Malgun Gothic", "맑은 고딕", "돋움", "dotum"; font-size:12px; line-height:14px; color:#666;}
+body {padding:15px;}
+a {text-decoration:none;}
+a:hover {color:#ff0000;}
+
+h1 {font-size:25px;	color:#000;	font-weight:bold; text-align:left; padding:20px 0 0 0;}
+h2 {font-size:14px;	color:#000;	font-weight:bold; text-align:left; padding:50px 0 0 0;}
+
+table {border-collapse:collapse; margin:20px 0; width:100%; border-bottom:1px solid #ccc;}
+table caption {display:none;}
+table th {background-color:#f0f0f0;	border:1px solid #ccc; border-bottom:double #ccc; padding:5px;}
+table td {border:1px solid #ccc; padding:5px 5px 5px 10px;}
+table td.date {text-align:center; font-family:"verdana"; font-size:11px;}
+table td.date strong {font-size:11px;}
+table td.date span {font-family:"verdana"; font-size:11px;}
+table td.note strong {color:#ff0000;}
+table td.note p + p {margin-top: 10px;}
+
+em {font-family:"verdana"; font-style:normal; color:#ff0000; font-size:11px;}
+em.today {font-family:"verdana"; font-style:normal; font-weight:bold; color:#ff0000; font-size:11px;}
+
+span {font-style:normal; color:#ff0000;}
+
+table td.date span, table td.date span em {display:block; margin-top:3px;}
+table td.note {text-align:left;}
+
+.gab {height:5px; padding:0}
+.cg {color:#ff0000;}
+.nop {color:green;}
+
+</style>
+</head>
+<body>
+<h1>[ENSI]</h1>
+
+<h2>* Front Coding List *</h2>
+<table border="0" cellspacing="0" cellpadding="0" summary="Front Coding List">
+  <caption>
+    Front Coding List
+  </caption>
+  <colgroup>
+  <col width="12%" />
+  <col width="12%" />
+  <col width="12%" />
+  <col width="20%" />
+  <col width="8%" />
+  <col width="*" />
+  </colgroup>
+  <thead>
+    <tr>
+      <th scope="col">1depth</th>
+      <th scope="col">2depth</th>
+      <th scope="col">3depth</th>
+      <th scope="col">Html File</th>
+      <th scope="col">Date</th>
+      <th scope="col">Note</th>
+    </tr>
+  </thead>
+  <tbody>
+	<tr>
+      <td align="center"><strong>메인</strong></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td class="file"><a href="index/index.html" target="_blank">index.html</a></td>
+      <td class="date">&nbsp;</td>
+      <td class="note">완료</td>
+    </tr>
+
+    <tr>
+      <td align="center"><strong>서브 레이아웃</strong></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td class="file"><a href="sub.html" target="_blank">sub.html</a></td>
+      <td class="date">&nbsp;</td>
+      <td class="note">완료</td>
+    </tr>
+
+    <tr>
+      <td rowspan="2" align="center"><strong>About</strong></td>
+      <td>ENSI 소개</td>
+      <td>&nbsp;</td>
+      <td class="file"><a href="/ensi_front/about/ensi.html" target="_blank">ensi.html</a></td>
+      <td class="date">&nbsp;</td>
+      <td class="note">완료</td>
+    </tr>
+    <tr>
+      <td>주요 연혁</td>
+      <td>&nbsp;</td>
+      <td class="file"><a href="/ensi_front/about/history.html" target="_blank">history.html</a></td>
+      <td class="date">&nbsp;</td>
+      <td class="note">완료</td>
+    </tr>
+
+
+    <tr>
+      <td rowspan="3" align="center"><strong>ENSI</strong></td>
+      <td>컨퍼런스</td>
+      <td>&nbsp;</td>
+       <td class="file"><a href="/ensi_front/ensi/conference.html" target="_blank">conference.html</a></td>
+      <td class="date">&nbsp;</td>
+      <td class="note">완료</td>
+    </tr>
+    <tr>
+      <td>포럼</td>
+      <td>&nbsp;</td>
+      <td class="file"><a href="/ensi_front/ensi/forum.html" target="_blank">forum.html</a></td>
+      <td class="date">&nbsp;</td>
+	    <td class="note">완료<strong></strong></td>
+    </tr>
+    <tr>
+      <td>세미나</td>
+      <td>&nbsp;</td>
+      <td class="file"><a href="/ensi_front/ensi/seminar.html" target="_blank">seminar.html</a></td>
+      <td class="date"><strong class="cg"></strong></td>
+	    <td class="note">완료</td>
+    </tr>
+
+
+    <tr>
+      <td rowspan="4" align="center"><strong>SI Research</strong></td>
+      <td>연구공모</td>
+      <td>&nbsp;</td>
+       <td class="file"><a href="/ensi_front/research/competition.html" target="_blank">competition.html</a></td>
+      <td class="date">&nbsp;</td>
+      <td class="note">완료</td>
+    </tr>
+    <tr>
+      <td rowspan="2">연구논문</td>
+      <td>list</td>
+      <td class="file"><a href="/ensi_front/research/papers/list.html" target="_blank">list.html</a></td>
+      <td class="date">&nbsp;</td>
+      <td class="note">완료</td>
+    </tr>
+    <tr>
+      <td>detail</td>
+      <td class="file"><a href="/ensi_front/research/papers/detail.html" target="_blank">detail.html</a></td>
+      <td class="date">&nbsp;</td>
+      <td class="note">완료</td>
+    </tr>
+    <tr>
+      <td>ENSI 인사이트</td>
+      <td>&nbsp;</td>
+      <td class="file"><a href="/ensi_front/research/insights.html" target="_blank">insights.html</a></td>
+      <td class="date"><strong class="cg"></strong></td>
+      <td class="note">완료</td>
+    </tr>
+
+
+
+    <tr>
+      <td rowspan="4" align="center"><strong>SI Education</strong></td>
+      <td rowspan="2">교육과정 리스트</td>
+      <td>list</td>
+       <td class="file"><a href="/ensi_front/education/curriculum/list.html" target="_blank">list.html</a></td>
+      <td class="date">&nbsp;</td>
+      <td class="note">완료</td>
+    </tr>
+    <tr>
+      <td>detail</td>
+      <td class="file"><a href="/ensi_front/education/curriculum/detail.html" target="_blank">detail.html</a></td>
+      <td class="date">&nbsp;</td>
+      <td class="note">완료</td>
+    </tr>
+    <tr>
+      <td rowspan="2">교육자료 리스트</td>
+      <td>list</td>
+      <td class="file"><a href="/ensi_front/education/material/list.html" target="_blank">list.html</a></td>
+      <td class="date">&nbsp;</td>
+      <td class="note">완료</td>
+    </tr>
+    <tr>
+      <td>detail</td>
+      <td class="file"><a href="/ensi_front/education/material/detail.html" target="_blank">detail.html</a></td>
+      <td class="date">&nbsp;</td>
+      <td class="note">완료</td>
+    </tr>
+
+
+
+    <tr>
+      <td rowspan="3" align="center"><strong>Community</strong></td>
+      <td rowspan="2">공지사항</td>
+      <td>list</td>
+      <td class="file"><a href="/ensi_front/community/notice/list.html" target="_blank">list.html</a></td>
+      <td class="date">&nbsp;</td>
+      <td class="note">완료</td>
+    </tr>
+    <tr>
+      <td>detail</td>
+      <td class="file"><a href="/ensi_front/community/notice/detail.html" target="_blank">detail.html</a></td>
+      <td class="date">&nbsp;</td>
+      <td class="note">완료</td>
+    </tr>
+    <tr>
+      <td>Contact</td>
+      <td>&nbsp;</td>
+      <td class="file"><a href="/ensi_front/community/contact.html" target="_blank">contact.html</a></td>
+      <td class="date">&nbsp;</td>
+      <td class="note">완료</td>
+    </tr>
+
+
+
+    <tr>
+      <td rowspan="3" align="center"><strong>회원가입</strong></td>
+      <td>회원가입 1단계(약관동의)</td>
+      <td>&nbsp;</td>
+      <td class="file"><a href="/ensi_front/join/step1.html" target="_blank">step1.html</a></td>
+      <td class="date">&nbsp;</td>
+      <td class="note">완료</td>
+    </tr>
+    <tr>
+      <td>회원가입 2단계(정보입력)</td>
+      <td>&nbsp;</td>
+      <td class="file"><a href="/ensi_front/join/step2.html" target="_blank">step2.html</a></td>
+      <td class="date">&nbsp;</td>
+      <td class="note">완료</td>
+    </tr>
+    <tr>
+      <td>회원가입 2단계(가입완료)</td>
+      <td>&nbsp;</td>
+      <td class="file"><a href="/ensi_front/join/step3.html" target="_blank">step3.html</a></td>
+      <td class="date">&nbsp;</td>
+      <td class="note">완료</td>
+    </tr>
+
+
+
+    <tr>
+      <td rowspan="4" align="center"><strong>마이페이지</strong></td>
+      <td>마이페이지</td>
+      <td>&nbsp;</td>
+      <td class="file"><a href="/ensi_front/myPage/myPage.html" target="_blank">myPage.html</a></td>
+      <td class="date">&nbsp;</td>
+      <td class="note">완료</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Q&A</td>
+      <td>list</td>
+      <td class="file"><a href="/ensi_front/myPage/qna/list.html" target="_blank">list.html</a></td>
+      <td class="date">&nbsp;</td>
+      <td class="note">완료</td>
+    </tr>
+    <tr>
+      <td>detail</td>
+      <td class="file"><a href="/ensi_front/myPage/qna/detail.html" target="_blank">detail.html</a></td>
+      <td class="date">&nbsp;</td>
+      <td class="note">완료</td>
+    </tr>
+    <tr>
+      <td>회원탈퇴</td>
+      <td>&nbsp;</td>
+      <td class="file"><a href="/ensi_front/myPage/withdrawal.html" target="_blank">withdrawal.html</a></td>
+      <td class="date">&nbsp;</td>
+      <td class="note">완료</td>
+    </tr>
+
+
+
+    <tr>
+      <td rowspan="3" align="center"><strong>로그인</strong></td>
+      <td>로그인</td>
+      <td>&nbsp;</td>
+      <td class="file"><a href="/ensi_front/login/login.html" target="_blank">login.html</a></td>
+      <td class="date">&nbsp;</td>
+      <td class="note">완료</td>
+    </tr>
+    <tr>
+      <td>비밀번호 찾기</td>
+      <td>&nbsp;</td>
+      <td class="file"><a href="/ensi_front/login/findPassword1.html" target="_blank">findPassword1.html</a></td>
+      <td class="date">&nbsp;</td>
+      <td class="note">완료</td>
+    </tr>
+    <tr>
+      <td>임시 비밀번호 발송</td>
+      <td>&nbsp;</td>
+      <td class="file"><a href="/ensi_front/login/findPassword2.html" target="_blank">findPassword2.html</a></td>
+      <td class="date">&nbsp;</td>
+      <td class="note">완료</td>
+    </tr>
+
+
+
+    <tr>
+      <td rowspan="5" align="center"><strong>기타</strong></td>
+      <td>이용약관</td>
+      <td>&nbsp;</td>
+      <td class="file"><a href="/ensi_front/etc/terms.html" target="_blank">terms.html</a></td>
+      <td class="date">&nbsp;</td>
+      <td class="note"><span>none</span></td>
+    </tr>
+    <tr>
+      <td>개인정보처리방침</td>
+      <td>&nbsp;</td>
+      <td class="file"><a href="/ensi_front/etc/privacy.html" target="_blank">privacy.html</a></td>
+      <td class="date">&nbsp;</td>
+      <td class="note"><span>none</span></td>
+    </tr>
+    <tr>
+      <td>이메일무단수집거부</td>
+      <td>&nbsp;</td>
+      <td class="file"><a href="/ensi_front/etc/rejection.html" target="_blank">rejection.html</a></td>
+      <td class="date">&nbsp;</td>
+      <td class="note">완료</td>
+    </tr>
+    <tr>
+      <td>에러</td>
+      <td>&nbsp;</td>
+      <td class="file"><a href="/ensi_front/etc/error.html" target="_blank">error.html</a></td>
+      <td class="date">&nbsp;</td>
+      <td class="note">완료</td>
+    </tr>
+    <tr>
+      <td>준비중</td>
+      <td>&nbsp;</td>
+      <td class="file"><a href="/ensi_front/etc/preparing.html" target="_blank">preparing.html</a></td>
+      <td class="date">&nbsp;</td>
+      <td class="note">완료</td>
+    </tr>
+
+
+
+    <tr>
+      <td rowspan="3" align="center"><strong>팝업</strong></td>
+      <td>이메일_pw찾기</td>
+      <td>&nbsp;</td>
+      <td class="file"><a href="/ensi_front/popup/email/findPassword.html" target="_blank">findPassword.html</a></td>
+      <td class="date">&nbsp;</td>
+      <td class="note">완료</td>
+    </tr>
+    <tr>
+      <td>이메일_답변메일발송</td>
+      <td>&nbsp;</td>
+      <td class="file"><a href="/ensi_front/popup/email/replay.html" target="_blank">replay.html</a></td>
+      <td class="date">&nbsp;</td>
+      <td class="note">완료</td>
+    </tr>
+    <tr>
+      <td>우편번호검색</td>
+      <td>&nbsp;</td>
+      <td class="file"><a href="/ensi_front/popup/post.html" target="_blank">post.html</a></td>
+      <td class="date">&nbsp;</td>
+      <td class="note">완료</td>
+    </tr>
+
+
+
+  </tbody>
+</table>
+</body>
+</html>

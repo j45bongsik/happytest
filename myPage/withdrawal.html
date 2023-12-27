@@ -1,0 +1,80 @@
+<!--#include file="../inc/header_sub.asp"-->
+
+  <div class="member_wrap">
+    <div class="join_wrap">
+      <h1 class="h1_title">회원탈퇴</h1>
+
+      <div class="form_wrap">
+
+        <div class="tab_step_my">
+          <ul>
+      			<li><a href="/ensi_front/mypage/myPage.html">개인정보변경</a></li>
+      			<li><a href="/ensi_front/mypage/qna/list.html">Q&A</a></li>
+      			<li class="on"><a href="/ensi_front/mypage/withdrawal.html">회원탈퇴</a></li>
+      		</ul>
+        </div>
+
+        <div class="contents">
+
+          <div class="cont_view">
+            <p class="h1">ENSI 회원을 탈퇴하시겠습니까?</p>
+            <div class="text_ul">
+              <ul class="list_inquiry">
+  				<li>회원 탈퇴 이후 동일 아이디로 재가입이 불가합니다.</li>
+                <li>작성하신 게시글은 탈퇴 후에도 삭제되지 않습니다.</li>
+                <li>삭제를 원하는 게시글은 탈퇴 전 삭제해주세요. </li>
+  			  </ul>
+            </div>
+
+            <div class="secession_table">
+              <p class="h2">본인 확인을 위해 비밀번호를 다시 한번 입력해주세요.</p>
+              <p class="w_400">
+                <label for="pass_again" class="blind">비밀번호 입력</label>
+                <input type="password" id="pass_again" name="pass_again" class="w100" />
+              </p>
+              <p class="h2">탈퇴사유</p>
+              <p class="w_400">
+                <label for="reason_list" class="blind">탈퇴사유</label>
+                <select id="reason_list" class="reason_list w100" title="탈퇴사유">
+  					<option value=""></option>
+  				</select>
+              </p>
+              <p class="w_400">
+                <label for="reason_text" class="blind">탈퇴사유 기입</label>
+                <input type="text" id="reason_text" name="reason_text" class="w100 reason_text" />
+              </p>
+            </div>
+
+
+
+
+          </div>
+          <!-- // cont_view -->
+
+          <div class="btn_ul">
+            <ul>
+              <li><button value="삭제" type="button" class="white">취소</button></li>
+              <li><button value="목록" type="button">회원탈퇴</button></li>
+            </ul>
+          </div>
+
+        </div>
+        <!-- // contents -->
+
+      </div>
+      <!-- // form_wrap -->
+
+    </div>
+    <!-- // join_wrap -->
+
+  </div>
+  <!--  // member_wrap -->
+
+  <div class="btn_top show">
+  	<div class="inner">
+  		<a href="javascript:scollTopStart();"><span>상단으로 이동</span></a>
+  	</div>
+  </div>
+  <!-- // btn_top show -->
+
+<!--#include file="../inc/footer_member.asp"-->

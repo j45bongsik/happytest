@@ -1,0 +1,62 @@
+<!--#include file="../inc/header_sub.asp"-->
+<jsp:include page="../inc/header_sub.asp"/>
+
+  <div class="member_wrap">
+    <div class="join_wrap">
+      <h1 class="h1_title_eng">Login</h1>
+      <h3 class="h3_title">ENSI의 다양한 서비스 이용을 위해 로그인 해주세요.</h3>
+
+        <div class="login_wrap">
+            <!-- LOGIN -->
+            <div class="login">
+      				<p class="txt_error">입력하신 아이디 또는 비밀번호가 일치하지 않습니다. <span class="txt_flow">다시 확인 후 입력해 주세요.</span></p>
+      				<form action="#" method="#">
+      					<label for="id_area" class="blind">아이디</label>
+      					<input type="text" id="id_area" class="input-l w100" placeholder="아이디" title="아이디 입력">
+      					<label for="pass_area" class="blind">비밀번호</label>
+      					<input type="text" id="pass_area" class="input-l w100" placeholder="비밀번호" title="비밀번호 입력">
+                <div class="button_red">
+                  <button value="로그인" id="btn_login" name="btn_login" type="button">로그인</button>
+                </div>
+                <p class="check_ui">
+                  <input type="checkbox" id="id_save" name="id_save">
+                  <label for="id_save">아이디 저장</label>
+              </p>
+      				</form>
+            </div>
+          <!-- // LOGIN -->
+
+        </div>
+        <!-- // login_wrap -->
+
+        <ul class="box_sign">
+          <li>
+            <p class="text">아직 ENSI 회원이 아니신가요?</p>
+            <p class="button"><button value="회원가입"  type="button" class="button_grey">회원가입</button></p>
+          </li>
+          <li>
+            <p class="text">비밀번호를 잊어 버리셨나요?</p>
+            <p class="button"><button value="비밀번호 찾기" type="button" class="button_grey">비밀번호 찾기</button></p>
+          </li>
+          <li>
+            <p class="text">아이디(email)찾기는 Contact에 문의해주세요.</p>
+            <p class="button"><button value="contact" type="button" class="button_white">Contact</button></p>
+          </li>
+        </ul>
+        <!-- // box_sign -->
+
+    </div>
+    <!-- // join_wrap -->
+
+  </div>
+  <!--  // member_wrap -->
+
+  <div class="btn_top show">
+  	<div class="inner">
+  		<a href="javascript:scollTopStart();"><span>상단으로 이동</span></a>
+  	</div>
+  </div>
+  <!-- // btn_top show -->
+
+<!--#include file="../inc/footer_member.asp"-->
+<jsp:include page="../inc/footer_member.asp"/>
